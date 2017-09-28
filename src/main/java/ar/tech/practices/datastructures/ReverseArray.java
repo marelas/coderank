@@ -1,4 +1,4 @@
-package datastructures;
+package ar.tech.practices.datastructures;
 
 import java.io.*;
 import java.util.*;
@@ -15,9 +15,13 @@ public class ReverseArray {
         for(int arr_i=0; arr_i < n; arr_i++){
             arr[arr_i] = in.nextInt();
         }
-
         
-     List <Integer> arraylist = new ArrayList<Integer>();
+        
+        for(int i = n - 1; i >= 0; i--){
+            System.out.print(arr[i] + " ");
+        }
+        
+    /* List <Integer> arraylist = new ArrayList<Integer>();
      
      arraylist = Arrays.asList(arr);
      Collections.reverse(arraylist);
@@ -32,7 +36,10 @@ public class ReverseArray {
     	 }
     	 String text = builder.toString();
     	 System.out.println(text);
-     }
+     }*/
      
+    
+        
+    }
     
 }
